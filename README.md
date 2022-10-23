@@ -1,10 +1,14 @@
 # Secret
 ### Local Server
 `kubectl create secret generic pgpassword --from-literal PGPASSWORD=123456`
+
 ### GCP
 `gcloud config set project tier-app-gke`
+
 `gcloud config set compute/zone us-central1-c`
+
 `gcloud container clusters get-credentials fib-cluster`
+
 `kubectl create secret generic pgpassword --from-literal PGPASSWORD=123456`
 
 # Helm
@@ -13,7 +17,9 @@
 In your Google Cloud Console run the following:
 
 `curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3`
+
 `chmod 700 get_helm.sh`
+
 `./get_helm.sh`
 
 [https://helm.sh/docs/intro/install/#from-script](https://helm.sh/docs/intro/install/#from-script)
@@ -23,6 +29,7 @@ In your Google Cloud Console run the following:
 In your Google Cloud Console run the following:
 
 `helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
+
 `helm install my-release ingress-nginx/ingress-nginx`
 
 Then check the service status:
