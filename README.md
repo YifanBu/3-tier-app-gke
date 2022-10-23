@@ -1,5 +1,5 @@
 # Secret
-### local
+### Local Server
 `kubectl create secret generic pgpassword --from-literal PGPASSWORD=123456`
 ### GCP
 `gcloud config set project tier-app-gke`
