@@ -1,4 +1,8 @@
-# Secret
+# Deploy 3-tier app on GKE
+## Architecture
+![architecture](https://user-images.githubusercontent.com/31915035/198856132-1ea599ab-349a-444a-8287-8c6e18483be4.png)
+
+## Secret
 ### Local Server
 `kubectl create secret generic pgpassword --from-literal PGPASSWORD=123456`
 
@@ -11,7 +15,7 @@
 
 `kubectl create secret generic pgpassword --from-literal PGPASSWORD=123456`
 
-# Helm
+## Helm
 ### Install Helm v3:
 
 In your Google Cloud Console run the following:
@@ -42,7 +46,7 @@ You may need to manually upgrade your cluster to at least the version specified:
 `gcloud container clusters upgrade  YOUR_CLUSTER_NAME --master --cluster-version 1.16`
 
 
-# Deploy to GKE
+## Deploy to GKE
 ### Link Github Repository with Google Cloud Source Repositories 
 
 ### Deploy the config files
